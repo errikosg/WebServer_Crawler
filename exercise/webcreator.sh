@@ -25,8 +25,8 @@ if [ "$#" -lt 4 ]
 fi
 
 if [ ! -e $1 ]
-	then echo "Root direcotry given doesnt exist. Exiting..."
-	exit
+	then echo "Root directory given doesnt exist. Creating..."
+	mkdir -p ./root_dir
 fi
 
 if [ ! -e $2 ]
